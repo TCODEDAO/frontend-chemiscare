@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.textOntop {
+    font-family: 'Jost', sans-serif;
+}
+
+.textMain {
+    font-family: 'Oswald', sans-serif;
+}
+
+.avt ul {
+    transform-origin: top right;
+    animation: scale ease-in 0.1s;
+}
+
+.navIcon ul {
+    animation: scale ease-in 0.1s;
+    transform-origin: top right;
+}
+
+.navIcon:hover ul {
+    display: flex;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1070px) {
+}
+
+@media screen and (min-width: 741px) and (max-width: 1070px) {
+    .nav {
+        display: none;
+    }
+
+    .navIcon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .text404 {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .headerContent {
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .navIcon {
+        display: block;
+    }
+
+    .textMain {
+        font-size: 80px;
+        line-height: 86px;
+    }
+
+    .textSub {
+        margin-top: 20px;
+    }
+}
